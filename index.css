@@ -68,6 +68,7 @@ header h1 {
   display: flex;
   align-items: center;
   gap: 5px;
+  font-weight: 600;
 }
 
 .btn:hover {
@@ -105,6 +106,10 @@ header h1 {
   fill: red;
 }
 
+.edit-icon {
+  fill: white;
+}
+
 .text-red {
   color: red;
 }
@@ -126,7 +131,10 @@ header h1 {
   padding: 10px 15px;
   margin: 0 5px 20px;
   font-weight: 700;
-  cursor: pointer;
+}
+
+.edit-mode {
+  color: #ccc;
 }
 
 @media (max-width: 500px) {
