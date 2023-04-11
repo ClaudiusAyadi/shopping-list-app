@@ -10,36 +10,37 @@
   <body>
     <div class="container">
       <header>
-        <!-- <img src="images/note.png" alt="" /> -->
         <h1 id="app-title">Shopping List</h1>
       </header>
-      <form id="item-form">
-        <div class="form-control">
+
+      <main>
+        <form id="item-form">
+          <div class="form-control">
+            <input
+              type="text"
+              class="form-input"
+              id="item-input"
+              placeholder="Enter Item"
+            />
+          </div>
+          <div class="form-control">
+            <button type="submit" class="btn">
+              <svg class="icon"><use href="sprite.svg#plus"></use></svg>Add Item
+            </button>
+          </div>
+        </form>
+
+        <div class="filter">
           <input
             type="text"
-            class="form-input"
-            id="item-input"
-            placeholder="Enter Item"
+            class="form-input-filter"
+            id="filter"
+            placeholder="Filter Items"
           />
         </div>
-        <div class="form-control">
-          <button type="submit" class="btn">
-            <svg class="icon"><use href="sprite.svg#plus"></use></svg>Add Item
-          </button>
-        </div>
-      </form>
-
-      <div class="filter">
-        <input
-          type="text"
-          class="form-input-filter"
-          id="filter"
-          placeholder="Filter Items"
-        />
-      </div>
-
-      <ul id="item-list" class="items">
-        <!-- <li>
+        <section>
+          <ul id="item-list" class="items">
+            <!-- <li>
           Apples
           <button class="remove-item btn-link text-red">
             <svg class="icon"><use href="sprite.svg#delete"></use></svg>
@@ -63,9 +64,39 @@
             <svg class="icon"><use href="sprite.svg#delete"></use></svg>
           </button>
         </li> -->
-      </ul>
+          </ul>
 
-      <button id="clear" class="btn-clear">Clear All</button>
+          <button id="clear" class="btn-clear">Clear All</button>
+        </section>
+      </main>
+
+      <footer>
+        <p>
+          This is my first project in Javascript. I took up the language over
+          the weekend and I'm really loving it.
+        </p>
+
+        <p>
+          This is a very basic project that allows a user to create a shopping
+          list and stores the list on the user's browser.
+        </p>
+
+        <p>
+          So the storage is persistent as long as the user doesn't clear out
+          localStorage. That is when you clear history or cache.
+        </p>
+
+        <p>
+          Hope to build awesome projects down the road. Thanks for testing out
+          my first project. I will keep sharing more cool projects as I learn.
+        </p>
+        <p>
+          &copy; 2023.
+          <a href="https://github.com/ClaudiusAyadi" class="gitauthor"
+            >Claudius A.</a
+          >
+        </p>
+      </footer>
     </div>
 
     <script src="index.js"></script>
